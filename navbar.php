@@ -3,7 +3,7 @@
        <nav class="navbar" aria-label="First navbar example">
          <div class="container-fluid">
            <a>
-             <h1>Ensar Camii</h1>
+             <h5>Ensar Camii</h1>
            </a>
            <!-- dropdown button -->
            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,8 +22,8 @@
                <li class="nav-item dropdown">
                  <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Beleid & financiën</a>
                  <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                   <li><a class="dropdown-item" href="sp1.html">beleidsplan</a></li>
-                   <li><a class="dropdown-item" href="sp2.html">Financiën</a></li>
+                   <li><a class="dropdown-item" href="Beleidsplan.html">beleidsplan</a></li>
+                   <li><a class="dropdown-item" href="Financiën.html">Financiën</a></li>
                  </ul>
                </li>
              </ul>

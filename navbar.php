@@ -107,17 +107,30 @@
     .sticky+.content {
       padding-top: 60px;
     }
+
+    .Anav:hover {
+      background-color: green;
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+
+    .Anav {
+      font-family: "roboto" "Sans-Serif";
+      font-weight: bolder;
+      background-color: white;
+      
+    }
   </style>
 </head>
 
 <body>
 
   <div class="topnav" id="myTopnav">
-    <a href="#home" class="active">Home</a>
-    <a href="#news">Over ons</a>
-    <a href="#contact">Beleidsplan</a>
-    <a href="#contact">Financiën</a>
-    <a href="#contact">Contact</a>
+    <a class="Anav" href="index.php" class="active">Home</a>
+    <a class="Anav" href="">Over ons</a>
+    <a class="Anav" href="Beleidsplan.php">Beleidsplan</a>
+    <a class="Anav" href="Financiën.php">Financiën</a>
+    <a class="Anav" href="contact.php">Contact</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i></a>
   </div>

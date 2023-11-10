@@ -1,35 +1,159 @@
-     <!-- navbar -->
-     <main>
-       <nav class="navbar" aria-label="First navbar example">
-         <div class="container-fluid">
-           <a>
-             <h5>Ensar Camii</h1>
-           </a>
-           <!-- dropdown button -->
-           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
-             <span class="navbar-toggler-icon"></span>
-           </button>
+<!DOCTYPE html>
+<html>
 
-           <div class="collapse navbar-collapse" id="navbarsExample01">
-             <ul class="navbar-nav me-auto mb-2">
-               <li class="nav-item">
-                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="contact.html" tabindex="-1" aria-disabled="false">contact</a>
-               </li>
-               <!-- dropdown -->
-               <li class="nav-item dropdown">
-                 <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Beleid & financiën</a>
-                 <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                   <li><a class="dropdown-item" href="Beleidsplan.html">beleidsplan</a></li>
-                   <li><a class="dropdown-item" href="Financiën.html">Financiën</a></li>
-                 </ul>
-               </li>
-             </ul>
-           </div>
-         </div>
-       </nav>
-     </main>
-     <!-- einde navbar -->
-    
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas+Neue">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <style>
+    .topnav {
+      overflow: hidden;
+      border-bottom: green solid 5px;
+      z-index: 1;
+      background-color: white;
+      position: fixed;
+      width: 100%;
+    }
+
+    .topnav a {
+      float: left;
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      font-size: 17px;
+      text-decoration-line: none;
+    }
+
+
+    .topnav .icon {
+      display: none;
+    }
+
+    @media screen and (max-width: 600px) {
+      .topnav a:not(:first-child) {
+        display: none;
+      }
+
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .topnav {
+        overflow: hidden;
+        border-bottom: green solid 5px;
+        z-index: 1;
+        background-color: white;
+        position: fixed;
+        width: 100%;
+      }
+
+      .topnav.responsive {
+        position: fixed;
+        width: 100%;
+      }
+
+      .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+
+      img {
+        width: 125px;
+        margin: none;
+        position: absolute;
+        padding-top: 2px;
+      }
+
+      .center {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    @media screen and (min-width: 600px) {
+
+      img {
+        width: 125px;
+        margin: none;
+        position: absolute;
+        padding-top: 2px;
+      }
+
+      .center {
+        display: block;
+        float: right;
+        padding-right: 150px;
+      }
+    }
+
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    .sticky+.content {
+      padding-top: 60px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="#home" class="active">Home</a>
+    <a href="#news">Over ons</a>
+    <a href="#contact">Beleidsplan</a>
+    <a href="#contact">Financiën</a>
+    <a href="#contact">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i></a>
+  </div>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.classList.contains("responsive")) {
+        x.classList.remove("responsive"); // Verwijder de class "responsive"
+        x.classList.remove("sticky"); // Verwijder de class "sticky"
+      } else {
+        x.classList.add("responsive"); // Voeg de class "responsive" toe
+        x.classList.add("sticky"); // Voeg de class "sticky" toe
+      }
+    }
+
+    window.onscroll = function() {
+      myFunction1();
+    };
+
+    var navbar = document.getElementById("myTopnav");
+    var sticky = navbar.offsetTop;
+
+    function myFunction1() {
+      if (window.innerWidth <= 600 && navbar.classList.contains("responsive")) {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      } else {
+        navbar.classList.add("sticky");
+      }
+    }
+  </script>
+
+</body>
+
+</html>

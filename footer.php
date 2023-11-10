@@ -1,65 +1,65 @@
-   <!-- Footer -->
-   <footer class="text-center text-lg-start text-white">
-       <!-- Grid container -->
-       <div class="container p-4 pb-0">
-           <!-- Section: Links -->
-           <section class="">
-               <!--Grid row-->
-               <div class="row">
-                   <hr class="w-100 clearfix d-md-none" />
+<!DOCTYPE html>
+<html lang="en">
 
-                   <!-- Grid column -->
-                   <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                       <h6 class="text-uppercase mb-4 font-weight-bold">over ons</h6>
-                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias fugit porro eveniet voluptatum molestiae temporibus
-                   </div>
-                   <!-- Grid column -->
-                   <hr class="w-100 clearfix d-md-none" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas+Neue">
+    <title>Footer</title>
+</head>
+<style>
+    footer {
+        border-top: darkgreen solid 4px;
+        background-color: green;
+        color: white;
+        margin: 0;
+        font-weight: lighter;
+    }
 
-                   <!-- Grid column -->
-                   <hr class="w-100 clearfix d-md-none" />
+    .text1 {
+        display: flex;
+        flex-direction: column;
+    }
 
-                   <!-- Grid column -->
-                   <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                       <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-                       <p><i class="fas fa-home mr-3"></i>Stalpaertstraat 5, 1813 CG Alkmaar</p>
-                       <p><i class="fas fa-phone mr-3"></i>06-24667600</p>
-                   </div>
-                   <!-- Grid column -->
-               </div>
-               <!--Grid row-->
-           </section>
-           <!-- Section: Links -->
+    .text2 {
+        display: flex;
+        flex-direction: column;
+    }
 
-           <hr class="my-3">
+    .content {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 20px;
+    }
 
-           <!-- Section: Copyright -->
-           <section class="p-3 pt-0">
-               <div class="row d-flex align-items-center">
-                   <!-- Grid column -->
-                   <div class="col-md-7 col-lg-8 text-center text-md-start">
-                       <!-- Copyright -->
-                       <div class="p-3">
-                           © 2023 Copyright:
-                           <a class="text-white" href="https://mdbootstrap.com/">Ensarcamii.nl</a>
-                       </div>
-                       <!-- Copyright -->
-                   </div>
-                   <!-- Grid column -->
+    .copyright {
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+</style>
 
-                   <!-- Grid column -->
-                   <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
-                       <!-- Facebook -->
-                       <a href="https://www.facebook.com/profile.php?id=100057033386594" class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-facebook-f"></i></a>
+<body>
+    <footer class="footer">
+        <div class="content">
+            <div class="text1">
+                <a>Home</a>
+                <a>Over ons</a>
+                <a>Beleidsplan</a>
+                <a>Financiën</a>
+                <a>Contact</a>
+            </div>
 
-                       <!-- Instagram -->
-                       <a href="https://www.instagram.com/ensar.camii/?img_index=1" class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-instagram"></i></a>
-                   </div>
-                   <!-- Grid column -->
-               </div>
-           </section>
-           <!-- Section: Copyright -->
-       </div>
-       <!-- Grid container -->
-   </footer>
-   <!-- Footer -->
+            <div class="text2">
+                <a>Contact:</a><br>
+                <a></a>
+                <a></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <small>&copy; Copyright 2023, Ensarcamii</small>
+        </div>
+    </footer>
+</body>
+
+</html>

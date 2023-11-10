@@ -9,6 +9,9 @@
     <script src="script.js"></script>
     <title>Ensar Camii</title>
     <script src="https://kit.fontawesome.com/21e98e6012.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
